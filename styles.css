@@ -1,0 +1,114 @@
+/* Загальні стилі для всього тіла */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Заголовок та опис */
+#title {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Форма */
+form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Кожен блок у формі */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Мітки та текст */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Інпут-поля, textarea і select */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Радіокнопки та чекбокси */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+/* Текст для радіо/чекбоксів */
+form div p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Кнопка */
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #submit {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}

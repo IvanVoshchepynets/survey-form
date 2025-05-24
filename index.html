@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey-form</h1>
+    <p id="description">Fill out this survey form.</p>
+
+    <form id="survey-form">
+        <!-- Name -->
+        <div>
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="example@gmail.com" required />
+        </div>
+
+        <!-- Age -->
+        <div>
+            <label id="number-label" for="age">Age:</label>
+            <input id="number" type="number" name="age" min="1" max="120" placeholder="Enter your age" />
+        </div>
+
+        <!-- Occupation -->
+        <div>
+            <label for="occupation">What do you do for a living?</label>
+            <select id="dropdown" name="occupation" required>
+                <option value="" disabled selected hidden>Choose current role</option>
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+        </div>
+
+        <!-- Recommend -->
+        <div>
+            <p>Would you recommend studying coding?</p>
+            <label><input type="radio" name="recommend" value="yes" required /> Yes</label><br />
+            <label><input type="radio" name="recommend" value="maybe" /> Maybe</label><br />
+            <label><input type="radio" name="recommend" value="no" /> No</label>
+        </div>
+
+        <!-- IT Positions -->
+        <div>
+            <p>What IT position are you aiming for?</p>
+            <label><input type="checkbox" name="position" value="frontend" /> Frontend Developer</label><br />
+            <label><input type="checkbox" name="position" value="backend" /> Backend Developer</label><br />
+            <label><input type="checkbox" name="position" value="fullstack" /> Fullstack Developer</label><br />
+            <label><input type="checkbox" name="position" value="qa" /> QA Engineer</label><br />
+            <label><input type="checkbox" name="position" value="devops" /> DevOps Engineer</label>
+        </div>
+
+        <!-- Comments -->
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" placeholder="Enter your comment here..." rows="4" cols="50" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
